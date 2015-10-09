@@ -1,0 +1,96 @@
+
+	Anderson-Darling normality test
+
+data:  crimtab.long[, 1]
+A = 18.8368, p-value < 2.2e-16
+
+
+	Anderson-Darling normality test
+
+data:  crimtab.long[, 2]
+A = 4.7094, p-value = 1.153e-11
+
+
+	Anderson-Darling normality test
+
+data:  crimtab.long[, 1] + r.noise * 2.54
+A = 0.3428, p-value = 0.4908
+
+
+	Cramer-von Mises normality test
+
+data:  crimtab.long[, 1] + r.noise * 2.54
+W = 0.0482, p-value = 0.5371
+
+
+	Lilliefors (Kolmogorov-Smirnov) normality test
+
+data:  crimtab.long[, 1] + r.noise * 2.54
+D = 0.015, p-value = 0.1061
+
+
+	Anderson-Darling normality test
+
+data:  crimtab.long[, 2] + r.noise/10
+A = 0.6865, p-value = 0.07299
+
+
+	Cramer-von Mises normality test
+
+data:  crimtab.long[, 2] + r.noise/10
+W = 0.1062, p-value = 0.09232
+
+
+	Lilliefors (Kolmogorov-Smirnov) normality test
+
+data:  crimtab.long[, 2] + r.noise/10
+D = 0.016, p-value = 0.0729
+
+
+	Anderson-Darling normality test
+
+data:  crimtab.long[, 1]
+A = 18.8368, p-value < 2.2e-16
+
+
+	Anderson-Darling normality test
+
+data:  crimtab.long[, 2]
+A = 4.7094, p-value = 1.153e-11
+
+
+	Anderson-Darling normality test
+
+data:  crimtab.long[, 1] + r.noise * 2.54
+A = 0.2458, p-value = 0.7583
+
+
+	Cramer-von Mises normality test
+
+data:  crimtab.long[, 1] + r.noise * 2.54
+W = 0.0321, p-value = 0.818
+
+
+	Lilliefors (Kolmogorov-Smirnov) normality test
+
+data:  crimtab.long[, 1] + r.noise * 2.54
+D = 0.0137, p-value = 0.1878
+
+
+	Anderson-Darling normality test
+
+data:  crimtab.long[, 2] + r.noise/10
+A = 0.6292, p-value = 0.1011
+
+
+	Cramer-von Mises normality test
+
+data:  crimtab.long[, 2] + r.noise/10
+W = 0.0966, p-value = 0.1252
+
+
+	Lilliefors (Kolmogorov-Smirnov) normality test
+
+data:  crimtab.long[, 2] + r.noise/10
+D = 0.0167, p-value = 0.05096
+
