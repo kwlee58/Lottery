@@ -12,7 +12,7 @@ Lottery Data Input
 - Pick-it 1976 New Jersey Lottery Game
 
 ```{r}
-lottery<-read.table("lottery.txt",header=T)
+lottery <- read.table("../data/lottery.txt",header=T)
 str(lottery)
 head(lottery)
 ```
@@ -24,17 +24,13 @@ summary(lottery)
 apply(lottery, 2, sd)
 ```
 
----
-
----
-
 Graphic Analysis on lottery.number
 ----------------------------------
 
 - 당첨번호는 0(사실상 000)에서 999 사이에 254회 추출한 랜덤표본으로 볼 수 있음. `stem()`을 이용하여 줄기-잎 그림을 그리고, 히스토그램 작성.
 
 ```{r}
-stem(lottery$lottery.number,scale=5)
+stem(lottery$lottery.number, scale = 0.5)
 ```
 
 ```{r fig.width=4, fig.height=4}
@@ -240,7 +236,7 @@ lines(lowess(lottery.number,lottery.payoff, f=2/3),col="red")
 ```{r}
 detach()
 par(opar)
-save(file="lottery.RData",list=ls())
+save(file="./lottery.RData", list = ls())
 ```
 ```
 savehistory("lottery.Rhistory")
