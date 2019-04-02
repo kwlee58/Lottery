@@ -12,7 +12,7 @@ Scatter Plot
 이용하여 
 
 ```{r fig.width=8, fig.height=4}
-load("lottery.rda")
+load("lottery.RData")
 attach(lottery)
 par(mfrow=c(1,2))
 plot(lottery[1,], xlim=c(0,1000), ylim=c(0,1000), axes=F, xlab="Number", ylab="Payoff")

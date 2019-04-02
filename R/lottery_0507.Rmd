@@ -5,23 +5,28 @@ date: "2015년 3월 14일"
 output: html_document
 ---
 
+```{r, echo = FALSE}
+library(pander)
+library(knitr)
+options(digits = 5)
+```
+
 Lottery Data Input
 -----------------
-
 
 - Pick-it 1976 New Jersey Lottery Game
 
 ```{r}
 lottery <- read.table("../data/lottery.txt",header=T)
 str(lottery)
-head(lottery)
+kable(head(lottery), align = "c")
 ```
 
 - 기초통계량을 계산하고 `lottery.number`의 경우 이론값과 비교. 이론값이라 함은?
 
 ```{r}
-summary(lottery)
-apply(lottery, 2, sd)
+kable(t(sapply(lottery, summary)))
+kable(t(apply(lottery, 2, sd)), align = "c")
 ```
 
 Graphic Analysis on lottery.number
